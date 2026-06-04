@@ -9,6 +9,7 @@ import Props from "./Props.jsx";
 import PropsAsFunctions from "./PropsAsFunctions.jsx";
 import PropsWithSpread from "./PropsWithSpread";
 import NestedProps from "./NestedProps.jsx";
+import { ConditionRendering } from "./ConditionalRendering.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Greeting />
@@ -18,5 +19,6 @@ createRoot(document.getElementById("root")).render(
     <PropsAsFunctions />
     <PropsWithSpread />
     <NestedProps />
+    <ConditionRendering />
   </StrictMode>,
 );
