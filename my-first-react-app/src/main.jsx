@@ -6,12 +6,14 @@ import Greeting from "./Greetings.jsx";
 import { FavoriteFood } from "./FavoriteFood.jsx";
 import { CorrectCode } from "./CorrectCode.jsx";
 import Props from "./Props.jsx";
+import PropsAsFunctions from "./PropsAsFunctions.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Greeting />
     <FavoriteFood />
     <CorrectCode />
-    <Props/>
+    <Props />
+    <PropsAsFunctions />
   </StrictMode>,
 );
