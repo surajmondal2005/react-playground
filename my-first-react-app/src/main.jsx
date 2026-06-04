@@ -10,6 +10,7 @@ import PropsAsFunctions from "./PropsAsFunctions.jsx";
 import PropsWithSpread from "./PropsWithSpread";
 import NestedProps from "./NestedProps.jsx";
 import { ConditionRendering } from "./ConditionalRendering.jsx";
+import { ListOfComponents } from "./ListofComponents.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Greeting />
@@ -20,5 +21,6 @@ createRoot(document.getElementById("root")).render(
     <PropsWithSpread />
     <NestedProps />
     <ConditionRendering />
+    <ListOfComponents />
   </StrictMode>,
 );
