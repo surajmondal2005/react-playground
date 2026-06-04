@@ -7,7 +7,8 @@ import { FavoriteFood } from "./FavoriteFood.jsx";
 import { CorrectCode } from "./CorrectCode.jsx";
 import Props from "./Props.jsx";
 import PropsAsFunctions from "./PropsAsFunctions.jsx";
-
+import PropsWithSpread from "./PropsWithSpread";
+import NestedProps from "./NestedProps.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Greeting />
@@ -15,5 +16,7 @@ createRoot(document.getElementById("root")).render(
     <CorrectCode />
     <Props />
     <PropsAsFunctions />
+    <PropsWithSpread />
+    <NestedProps />
   </StrictMode>,
 );
