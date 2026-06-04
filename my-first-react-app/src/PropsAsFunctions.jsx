@@ -3,13 +3,17 @@ function Button({ text, handleClick }) {
 }
 
 export default function PropsAsFunctions() {
-  const handleButtonClick = () => {
-    window.location.href = "https://www.google.com";
+  const handleButtonClick = (url) => {
+    window.location.href = url;
   };
 
   return (
     <div>
-      <Button handleClick={handleButtonClick} text="Hello" />
+      <Button
+        handleClick={() => handleButtonClick("https://www.theodinproject.com")}
+        text="Hello"
+      />
     </div>
   );
 }
+/*Here for passing link as parameter we have to call an anonymous function that that calls the handleClick function with an argumet */
