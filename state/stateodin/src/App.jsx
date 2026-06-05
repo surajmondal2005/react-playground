@@ -1,13 +1,17 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
-const COLORS = ['pink', 'green', 'blue', 'yellow', 'purple'];
+const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
+  const [count, setCount] = useState(0);
 
   const onButtonClick = (color) => () => {
     setBackgroundColor(color);
+    if (color !== backgroundColor) {
+      setCount(count + 1);
+    }
   };
 
   return (
@@ -22,11 +26,12 @@ function App() {
           type="button"
           key={color}
           onClick={onButtonClick(color)}
-          className={backgroundColor === color ? 'selected' : ''}
+          className={backgroundColor === color ? "selected" : ""}
         >
           {color}
         </button>
       ))}
+      Count : {count}
     </div>
   );
 }
